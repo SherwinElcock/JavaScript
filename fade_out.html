@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Animation</title>
+<style type="text/css">
+div.contentbox{
+	background:#1C9EFF;
+	width:350px;
+	height: 200px;
+	padding:12px;
+}
+</style>
+<script type="text/javascript" src="fadeEffects.js"></script>
+
+ </head>
+ <body>
+ 	<h2>Here is the Animation in JavaScript</h2>
+ 	<p>To keep the space when it fades out, remove - target.style.display = "none";</p>
+	<button onmouseover = "fadeOut('div1')">Fade Out </button>
+	<button onmouseover = "fadeIn('div1')">Fade In </button>
+ 	<div id="div1" class="contentbox">Hover over the buttons.
+<p>Element fades out... Space disappears.</p>
+ 	</div>
+<p>Just some Text</p>
+	<button onclick="fadeOut('div2')">Fade Out </button>
+	<button onclick="fadeIn('div2')">Fade In </button>
+ 	<div id="div2" class="contentbox">Some more stuff...</div>
+<p>And some more</p>
+	<button onclick="fadeOut('div3')">Fade Out </button>
+	<button onclick="fadeIn('div3')">Fade In </button>
+ 	<div id="div3" class="contentbox">That's all the stuff I have...</div>
+<p>OK OK, that's all.</p>
+ </body>
+ </html>
